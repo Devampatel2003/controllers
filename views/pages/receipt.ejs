@@ -1,0 +1,61 @@
+<head>
+    <%- include("../shared/head") %>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Receipt!!</h1>
+
+        <table class="table table-hover table-bordered">
+            <tbody>
+                <tr>
+                    <td>Name :</td>
+                    <td><%= name %></td>
+                </tr>
+                <tr>
+                    <td>E-mail :</td>
+                    <td><%= email %></td>
+                </tr>
+                <tr>
+                    <td>Phone :</td>
+                    <td><%= phone %></td>
+                </tr>
+                <tr>
+                    <td>Delivery Address :</td>
+                    <td><%= deliveryAddress %></td>
+                </tr>
+                <tr>
+                    <td>Product 1 @ $2 :</td>
+                    <td>$<%= product1 %></td>
+                </tr>
+                <tr>
+                    <td>Product 2 @ $3 :</td>
+                    <td>$<%= product2 %></td>
+                </tr>
+                <tr>
+                    <td>Product 3 @ $5:</td>
+                    <td>$<%= product3 %></td>
+                </tr>
+                <tr>
+                    <td>Shipping Charges :</td>
+                    <td>$<%= shippingCharges %></td>
+                </tr>
+                <tr>
+                    <td>Sub-Total :</td>
+                    <td>$<%= subtotal %></td>
+                </tr>
+                <tr>
+                    <td>Taxes @ 13% :</td>
+                    <td>$<%= taxes %></td>
+                </tr>
+                <tr>
+                    <td>Total :</td>
+                    <td>$<%= total %></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <%- include("../shared/footer") %>
+    </div>
+    <%- include("../shared/scripts") %>
+</body>
